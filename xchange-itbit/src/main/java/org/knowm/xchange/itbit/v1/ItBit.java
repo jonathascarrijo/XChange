@@ -18,7 +18,7 @@ import org.knowm.xchange.itbit.v1.dto.marketdata.ItBitTrades;
 public interface ItBit {
 
   @GET
-  @Path("/markets/{ident}{currency}/order_book")
+  @Path("/markets/XBT{currency}/order_book")
   ItBitDepth getDepth(@PathParam("ident") String tradeableIdentifier, @PathParam("currency") String currency)
       throws IOException, ItBitException;
 

@@ -27,7 +27,7 @@ public class CexIOExchange extends BaseExchange implements Exchange {
     ExchangeSpecification exchangeSpecification = new ExchangeSpecification(this.getClass().getCanonicalName());
     exchangeSpecification.setSslUri("https://cex.io");
     exchangeSpecification.setHost("cex.io");
-    exchangeSpecification.setPort(80);
+    exchangeSpecification.setPort(443);
     exchangeSpecification.setExchangeName("Cex IO");
     exchangeSpecification.setExchangeDescription("Cex.IO is a virtual commodities exchange registered in United Kingdom.");
 

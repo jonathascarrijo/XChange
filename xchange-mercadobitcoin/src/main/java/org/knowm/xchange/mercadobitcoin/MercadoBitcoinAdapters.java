@@ -57,7 +57,7 @@ public final class MercadoBitcoinAdapters {
 
     List<LimitOrder> asks = createOrders(currencyPair, OrderType.ASK, mercadoBitcoinOrderBook.getAsks());
     List<LimitOrder> bids = createOrders(currencyPair, OrderType.BID, mercadoBitcoinOrderBook.getBids());
-    return new OrderBook(null, asks, bids);
+    return new OrderBook(new Date(), asks, bids);
   }
 
   public static List<LimitOrder> createOrders(CurrencyPair currencyPair, OrderType orderType, List<List<BigDecimal>> orders) {
